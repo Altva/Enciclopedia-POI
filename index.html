@@ -2,24 +2,37 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
         <title>Enciclopedia</title>
     </head>
-    <body>
+
+
+
+    <body onload="LoadContent('hola')">
         <h1>Index</h1>
-        <ul>
-            <li>
-                1er Parcial HEHEHEHEHHE
-                <ul>
-                    <li> Tema 1</li>
-                </ul>
-            </li>
-            <li>
-                2do Parcial
-                <!-- Comentario -->
-                <ul>
-                    <li> Tema 1</li>
-                </ul>
-            </li>
-        </ul>
+        
+        <nav>
+            <ul>
+                <li>
+                    1er Parcial HEHEHEHEHHE
+                    <ul>
+                        <li> Tema 1</li>
+                    </ul>
+                </li>
+                <li>
+                    2do Parcial
+                    <!-- Comentario -->
+                    <ul>
+                        <li> Tema 1</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+        <div id="content"></div>
+
     </body>
 </html>
