@@ -44,7 +44,10 @@ h5{
     background: #f2f2f2;
 
 }
-
+.content::after{
+    clear: both;
+    content: "";
+}
 .content object{
     background: #f2f2f2;
     width: 100%;
@@ -66,7 +69,11 @@ nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 
     background: white;
+    align-items: center;
+    
+    transition: margin-left 1s ease; 
 }
+
 .menu-item{
     background: #fff;
     width: 200px;
