@@ -1,13 +1,129 @@
-html, body {
+
+
+body {
+  background: #e5e5e7;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+ul, li, h4, .content{
+    margin: 0px;
+    padding: 0px;
+}
+
+h5{
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+#header {
+    text-align: center;
+    padding: 1px 0px 0px 0px;
+    margin-bottom: 10px;
+
+    background: #6699ff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+    clear:both;
+    text-align:center;
+    padding:5px;	
+
+    background: #1a66ff;	 
+}
+
+.content {
+    height: 1000px;
+    width: 70%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    float: left;
+
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: #f2f2f2;
+
+}
+
+.content object{
+    background: #f2f2f2;
+    width: 100%;
     height: 100%;
 }
 
-html {
-    display: table;
-    margin: auto;
+.content-data{
+    background: #f2f2f2;;
 }
 
-body {
-    display: table-cell;
-    /*vertical-align: middle;*/
+
+/* Navigation menu */
+nav {
+   padding: 0px;
+    line-height: 1.5;
+    width: 200px;
+    margin-left: 5%;
+    float: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+
+    background: white;
+}
+.menu-item{
+    background: #fff;
+    width: 200px;
+}
+
+.menu-item h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 12px;
+    background: #a90329;
+}
+
+.menu-item h4:hover {
+    background: #800000;
+}
+
+.menu-item h4 a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    width: 200px;
+}
+
+.top p {
+    font-size: 13px;
+    padding: 8px 12px;
+    color: #aaa;
+}
+
+.menu-item ul{
+    background: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    height: 0px; /* colapse this menu */
+    -webkit-transition: height 1s ease;
+    transition: height 1s ease;
+}
+.menu-item:hover ul{
+    height: 340px;
+}
+
+.menu-item ul a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    width: 200px;
+}
+
+.menu-item li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item li:hover {
+    background: #eee;
 }
