@@ -36,10 +36,10 @@
         <div id="content" class="content">
             <div class="content-data">
                 <h1> DNS, Sockets y Puertos </h1>
-                <ul class="Conceptos">
+                <ul class="conceptos">
                     <li>
                         <h3> Hardware address </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Dentro de cada paquete de información hay una cabecera que contiene información de la dirección</li>
                             <li>Esta dirección esta grabada en forma definitiva en la tarjeta de Red por el fabricante.</li>
                             <li> La dirección es única entre todos los manufactureros. El dato es de 12 dígitos hexadecimales.Donde los primeros 6, se le asignan al fabricante, y los últimos 6 
@@ -48,7 +48,7 @@
                     </li>
                     <li>
                         <h3> Broadcast Packet </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Cuando la comunicación es entre dos hosts se agrega a la cabecera la dirección de origen y destino. Cuando se quiere transmitir un mensaje global, se le asigna:</li>
                             <li>FF:FF:FF:FF:FF:FF.</li>
                            
@@ -56,7 +56,7 @@
                     </li>
                     <li>
                         <h3> Capas de internet </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>La capa de internet del modelo TCP/IP está entre la capa de transporte y la de enlace. Sus protocolos son responsables de direccionar y rutear paquetes.Ejemplos:</li>
                             <li><b>Internet Protocol (IP)</b></li>
                            <li><b>Adress Resolution Protocol (ARP)</b></li>
@@ -66,14 +66,14 @@
                     </li>
                     <li>
                         <h3> Internet Protocol(IP) </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Una porción de la IPO define en que red esta el host, a través de una máscara de subred o Subnet Mask. Cuando se va a enviar un paquete por la red, el protocolo IP 
                                 necesita saber si el destino es de una <b>red local</b> o a una <b>red remota</b>, esto lo determina con la máscara de subred.</li>
                         </ul>
                     </li>
                     <li>
                         <h3> Default gateway </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Cuando el protocolo IP necesita enviar datos fuera de la red local, lo tiene que hacer mediante el default gateway(router). El default gateway, es la dirección del 
                                 host en la red que ofrece la salida de la red hacia otras. Este host debe de tener 2 tarjetas de red, una para la red local, y otra para conectarse con las 
                                 redes remotas.
@@ -82,7 +82,7 @@
                     </li>
                     <li>
                         <h3> Routing table </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Es una tabla que contiene direcciones indicando la mejor ruta hacia otras redes.</li>
                             <li>Cuando la red es local, el IP busca la dirección del host de destino; y cuando la red es remota, el IP busca en su tabla de ruteo,por una ruta explícita,que en caso de no 
                                 hallarla, utiliza nuestra <b>default gateway</b>.
@@ -91,7 +91,7 @@
                     </li>
                      <li>
                         <h3> Adress Resolution Protocol </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>ARP es un protocolo que resuelve una dirección IP en una dirección física.</li>
                             <li>ARP, primero intenta resolver las direcciones a través del <b>ARP chache</b>, que es una área de memoria que mantiene las relaciones de direcciones ya resueltas.
                             En caso de no encontrarse la dirección física en el ARP chache, entonces el protocolo hace un ARP request. </li>
@@ -103,7 +103,7 @@
                     </li>
                       <li>
                         <h3> Internet Control Message Protocol (ICMP) </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Es un protocolo utilizado para enviar mensajes de error, ejecutar diagnósticos y controlar el flujo de datos. Por ejemplo, cuando el ICMP ejecuta una utilería 
                                 llamada piing, para ver el eco de la comunicación
                             </li>
@@ -111,7 +111,7 @@
                     </li>
                       <li>
                         <h3> Internet Group Management Protocol (IGMP) </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Es un protocolo que habilita a un host enviar un stream de datos a varios hosts al mismo tiempo. El <b>stream</b> es una serie de paquetes enviados sin esperar
                             reconocimiento de llegada.</li>
                             <li>La dirección de llegada del IGMP es llamada multicast adress y es reservada para este propósito.</li>
@@ -120,7 +120,7 @@
                     </li>
                     <li>
                         <h3> Capa de transporte </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>La capa de transporte del TCP/IP está formada por el protocolo TCP y UDP</li>
                             <li>EL TCP provee una conexión orientada y confiable. Es lento y utilizado para grandes montos de información.</li>
                              <li>El UDP no provee conexión y si una conexión poco confiable. Es rápido, pero para pequeñas cantidades de información.</li>
@@ -128,7 +128,7 @@
                     </li>
                     <li>
                         <h3> Capa de aplicación </h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>Es la parte del TCP/IP donde se realizan las solicitudes por datos y servicios. Las aplicaciones de esta capa están esperando por las solicitudes escuchando 
                                 a sus respectivos puertos.</li>
                             <li>Un puerto es el número que se utiliza para enviar o recibir direcciones. Este distingue a la aplicación en comunicación. </li>
@@ -139,7 +139,7 @@
                     </li>
                       <li>
                         <h3> Puertos conocidos</h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>La IANA (Internet Assigned Number Authority) ha reservado algunos puertos:</li>
                             <li>TCP:80 HTTP </li>
                              <li>TCP:21 FTP</li>
@@ -149,7 +149,7 @@
                     </li>
                       <li>
                         <h3> DHCP</h3>
-                        <ul class="Parrafos">
+                        <ul class="parrafos">
                             <li>El DHCP(Dynamic Host Configuration Protocol) es el proveedor de direcciones IP automático.</li>
                             <li>El proceso del DHCP consta de 4 pasos principales: </li>
                              <li><b>Descubrimiento</b></li>
