@@ -2,6 +2,14 @@ body {
     margin: 0px;
     background: #e5e5e7;
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+    /* http://lea.verou.me/css3patterns/ */
+
+background:
+linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px
 }
 
 .menu-item ul, .menu-item li, .menu-item h4{
@@ -16,23 +24,28 @@ h5{
 
 #header {
     text-align: center;
-    padding: 1px 0px 0px 0px;
+    padding: 1em 0px 1em 0px;
     margin-bottom: 10px;
 
-    background: #6699ff;
+    color: white;
+    /*background: #a90329;*/
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    background: #006699;
+
 }
 
-#footer {
-    clear:both;
-    text-align:center;
-    padding:5px;	
+#header h1{
+    margin: 0px;
+}
 
-    background: #1a66ff;	 
+.footer{
+    color: #cccccc;
+    text-align: center;
+    padding: 5px;
 }
 
 .content {
-    
     /*height: 1000px;*/
     width: 70%;
     margin: 0px;
@@ -62,11 +75,18 @@ h5{
 
 .content-data ul{
     list-style-type: none;
+    
+}
+
+.conceptos{
+    padding-bottom: 2em;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .content-data ul li {
     margin-top: 10px;
 }
+
 
 /* Navigation menu */
 nav {
@@ -93,11 +113,12 @@ nav {
     font-size: 15px;
     font-weight: 500;
     padding: 7px 12px;
-    background: #a90329;
+    background: #006699;
+    
 }
 
 .menu-item h4:hover {
-    background: #800000;
+    background: #004466;
 }
 
 .menu-item h4 a{
