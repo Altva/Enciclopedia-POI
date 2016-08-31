@@ -35,30 +35,79 @@
         </div>
         <div id="content" class="content">
             <div class="content-data">
-                <h1>Lorem ipsum</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis sagittis nunc, quis faucibus urna molestie vel. Fusce at rhoncus lacus, eget condimentum diam. Phasellus feugiat aliquam lectus a gravida. Aliquam nibh nisi, consectetur sed tincidunt nec, consequat nec leo. Aliquam lobortis nibh nunc, vel finibus turpis tempor vel. Nam hendrerit massa non efficitur molestie. Quisque ornare malesuada diam vitae malesuada. Vivamus convallis mauris magna, ut pellentesque risus hendrerit vel. Proin imperdiet eros in mi venenatis porta. Phasellus in massa porttitor, suscipit orci nec, cursus dolor. Fusce quis ipsum id nibh tincidunt sollicitudin sed nec erat. Nam libero justo, gravida eu ligula eu, tincidunt consequat lorem. Morbi pellentesque sed magna finibus volutpat. Nulla tincidunt pretium dui sit amet rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vitae elit laoreet, viverra nisl a, ullamcorper nisi.
-                </p>
-                <p>
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eu mauris leo. Vestibulum fringilla lectus a ante aliquet, at imperdiet enim tristique. Mauris quis lorem consequat, gravida arcu vitae, rutrum erat. Morbi et congue mi. Sed tortor augue, congue mollis dolor a, ultrices ultrices neque. Suspendisse eleifend suscipit convallis. Curabitur eleifend neque vel rhoncus mattis. Morbi neque mauris, eleifend vitae velit quis, dictum mattis odio. Nunc vitae diam augue. Maecenas vel porttitor lorem.
-                </p>
-                <p>
-                    Vestibulum at euismod nisl. Ut nunc mauris, congue id dolor ut, cursus rutrum diam. Sed mauris erat, tincidunt ac volutpat a, iaculis eget lorem. Suspendisse suscipit sollicitudin vestibulum. Phasellus at mollis ipsum. Nullam eu purus velit. Cras facilisis risus vel semper dapibus. Etiam interdum diam vel dolor commodo, quis pretium mi tincidunt. Proin non dui vitae risus imperdiet ultrices. Donec convallis magna sed arcu auctor, quis efficitur nibh faucibus.
-                </p>
-                <p>
-                    Vivamus interdum lobortis ultrices. Etiam lacinia odio vel lectus condimentum ultricies. Praesent feugiat nibh non tristique scelerisque. Aenean ut fringilla lacus. In hac habitasse platea dictumst. Duis vitae augue at ligula pellentesque pharetra. Sed semper bibendum nibh, in faucibus dui sodales vel. Fusce eget maximus sapien. Duis posuere finibus pharetra. Ut lectus lacus, semper ac diam sit amet, tincidunt rutrum nibh. Pellentesque tristique neque velit, et hendrerit nibh rhoncus ac. Proin in nisl in tellus interdum rhoncus.
-                <p>
-                    Pellentesque sed augue lacinia, euismod elit in, dapibus quam. Fusce pellentesque arcu rhoncus porta eleifend. Aliquam imperdiet dolor vitae luctus sodales. Duis auctor sapien id condimentum faucibus. Vivamus auctor et sem vitae rhoncus. Cras semper et nibh sit amet rhoncus. Proin et iaculis lacus. Aliquam erat volutpat. Curabitur vestibulum laoreet lorem, quis dapibus quam sagittis ac. Curabitur at turpis suscipit, ullamcorper enim at, dapibus tortor. Suspendisse potenti. Donec laoreet dictum odio at tincidunt. Aliquam ante ligula, placerat nec aliquet eget, finibus eu sem. In accumsan dui et sapien sollicitudin gravida. Praesent imperdiet viverra auctor. Vivamus scelerisque iaculis augue.
-                </p>
-                <p>
-                    Now, this is a lot to throw at you all at once so I’ll walk through it step by step. The first thing we do is give the paragraphs shape, color and type styles exactly like we did on the button. The main difference is that these are smaller and use some margins to push them into place.
-                </p>
-                <p>
-                    Next are the positioning styles. These are very important so be sure you understand them clearly. In order to make the wings appear behind the button, we need to apply z-index, which affects the stacking order of the elements. Think of this as a “send to back” sort of command. To make this work, we need to apply absolute positioning.
-                </p>
-                <p>
-                    Finally, we added the same border-radius and gradient styles that we did before. I’ve kept these separated from the previous styles to keep things simple and clear, but to make things DRYer, you would probably want to rewrite your shared CSS3 styles to something like this:
-                </p>
+                <h1> Internet y DHCP </h1>
+                <ul class="Conceptos">
+                    <li>
+                        <h3> Hardware address </h3>
+                        <ul class="Parrafos">
+                            <li>Dentro de cada paquete de información hay una cabecera que contiene información de la dirección</li>
+                            <li>Esta dirección esta grabada en forma definitiva en la tarjeta de Red por el fabricante.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> Capa de internet </h3>
+                        <ul class="Parrafos">
+                            <li>La capa de internet del modelo TCP/IP esta entre la capa de transporte y la de enlace.</li>
+                            <ul>
+                                <li>
+                                    <h3> Internet Protocol </h3>
+                                    <ul class="Parrafos">
+                                        <li>Este protocolo se encarga de determina la dirección de origen y destino de cada paquete.</li>
+                                        <li>El administrador de la red se encarga de asignar una direccion OP a la red en carácter de única.</li>
+                                        <li>Esta direccion se llama <b>dirección lógica.</b></li>
+                                        <br>
+                                        <li>Ejemplo: 192.168.2.51</li>
+                                        <br>
+                                        <li>Cuando se va a enviar un paquete por la red, necesita saber si el destino es una <b>red local</b> o a una <b>red remota</b>, 
+                                        esto lo determina la <b>máscara de subred</b></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3> Default gateway </h3>
+                                    <ul class="Parrafos">
+                                        <li>También llamado router es la dirección del host dek host en la red que ofrece la salida de la red hacia otras.</li>
+                                        <li>Este se utiliza cuando se quiere enviar algo fuera de la red local.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3> Routing table </h3>
+                                    <ul class="Parrafos">
+                                        <li>Es una tabla que contiene direcciones indicando la mejor ruta hacia otras redes.</li>
+                                        <li>Cuando la red es remota, la IP se busca en su Routing table.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3> Address Resolution Protocol </h3>
+                                    <ul class="Parrafos">
+                                        <li>ARP es un protocolo que resuelve una dirección IP en una dirección física.</li>
+                                        <li>Cuando la red es remota, la IP se busca en su Routing table.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3> Internet Control Message Protocol (ICMP) </h3>
+                                    <ul class="Parrafos">
+                                        <li>Es un protocolo utilizado principalmente para enviar mensajes de error, ejecutar diagnósticos y controlar el flujo de datos. </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3> Internet Group Management Protocol (IGMP) </h3>
+                                    <ul class="Parrafos">
+                                        <li>Es un protocolo que habilita a un host a enviar un stream de datos a varios hosts al mismo tiempo </li>
+                                        <li>El audio y el video se transmiten utilizando este protocolo.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> Capa de transporte </h3>
+                        <ul class="Parrafos">
+                            <li>La capa de transporte del TCP/IP está formada solo por dos protocolos, el TCP y el UDP.</li>
+                            <li>El <b>TCP</b> provee una conexión orientada y confiable. Es lento y utilizado para grandes montos de información y pretende asegurar que no se tendrá que reenviar. </li>
+                            <li>El <b>UDP</b> no provee conexión y si una comunicación poco confiable. Es rápido y solo para cantidades pequeñas de información. </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
