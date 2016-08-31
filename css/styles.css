@@ -1,8 +1,7 @@
-
-
 body {
-  background: #e5e5e7;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0px;
+    background: #e5e5e7;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 ul, li, h4, .content{
@@ -44,10 +43,6 @@ h5{
     background: #f2f2f2;
 
 }
-.content::after{
-    clear: both;
-    content: "";
-}
 .content object{
     background: #f2f2f2;
     width: 100%;
@@ -55,7 +50,7 @@ h5{
 }
 
 .content-data{
-    background: #f2f2f2;;
+    background: #f2f2f2;
 }
 
 
@@ -116,7 +111,7 @@ nav {
     transition: height 1s ease;
 }
 .menu-item:hover ul{
-    height: 340px;
+    height: 186px;
 }
 
 .menu-item ul a{
