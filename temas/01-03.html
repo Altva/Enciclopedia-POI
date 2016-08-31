@@ -103,8 +103,31 @@
                         <h3> Capa de transporte </h3>
                         <ul class="Parrafos">
                             <li>La capa de transporte del TCP/IP está formada solo por dos protocolos, el TCP y el UDP.</li>
-                            <li>El <b>TCP</b> provee una conexión orientada y confiable. Es lento y utilizado para grandes montos de información y pretende asegurar que no se tendrá que reenviar. </li>
+                            <li>El <b>TCP</b> provee una conexión orientada y confiable. Es lento y utilizado para grandes montos de información y pretende asegurar 
+                            que no se tendrá que reenviar. </li>
                             <li>El <b>UDP</b> no provee conexión y si una comunicación poco confiable. Es rápido y solo para cantidades pequeñas de información. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> Capa de aplicación </h3>
+                        <ul class="Parrafos">
+                            <li>Es la parte del TCP/IP donde se realizan las solicitudes por datos y servicios. Las aplicaciones en esta capa están esperando por 
+                                solicitudes escuchando a sus respectivos puertos.</li>
+                            <li>Un puerto es un número que se utiliza para enviar o recibir direcciones.</li>
+                            <li>Un socket es la combinacion de la IP, el protocolo y el puerto.</li>
+                            <li>De esta manera una aplicacion distingue la ruta por la que hará la comunicación.</li>
+                            <li>Ejemplo: 192.168.2.0:TCP:80</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> DHCP </h3>
+                        <ul class="Parrafos">
+                            <li>El Dynamic Host Configuration Protocol es el proveedor de direcciones IP automático</li>
+                            <li>El proceso del DHCP consta de 4 pasos principales:</li>
+                            <li><b>Descubrimiento:</b> El cliente hace una solicitud de tipo broadcast buscando por un servidor DHCP que le pueda proporcionar una IP.</li>
+                            <li><b>Ofrecimiento:</b> El servidor envía un broadcast con un paquete que incluye la IP.</li>
+                            <li><b>Solicitud:</b> El cliente recibe la IP propuesta pero le hace falta comunicarle al servidor que si la acepta y que se le asigne en forma definitiva.</li>
+                            <li><b>Reconocimiento:</b> Es donde el servidor confirma que la IP ya fue reservada para el cliente.</li>
                         </ul>
                     </li>
                 </ul>
