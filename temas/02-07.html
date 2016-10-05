@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1>TCP vs UDP</h1>
+                <ul>
+                    <li>El protocolo HTTP es un protocolo cliente/servidor a través del cual dos sistemas pueden comunicarse, usualmente sobre una conexión TCP/IP.</li>
+
+                    <li><b>Cabecera HTTP:</b> Un mensaje HTTP consiste en una línea de comienzo, seguida por un grupo de headers, una línea vacía y algo de información.</li>
+
+                    <li>
+                        <h4>Los headers HTTP pueden dividirse en tres categorías:</h4>
+                        <ul>
+                            <li>- Headers que se envían en la petición.</li>
+                            <li>- Headers que se envían en la respuesta.</li>
+                            <li>- Headers que se pueden enviar en petición y respuesta.</li>
+                        </ul>
+                    </li>
+
+                    <li><b>Peticiones HTTP:</b> Cada cliente crea una petición y el servidor responde a esa petición.</li>
+
+                    <li>
+                        <h4>Cada petición y respuesta tiene 3 partes:</h4>
+                        <ul>
+                            <li>- La línea de petición o respuesta.</li>
+                            <li>- Una sección de cabeceras.</li>
+                            <li>- El contenido que se envía con el mensaje.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>Las líneas de petición del cliente se dividen en 3 secciones:</h4>
+                        <ul>
+                            <li>- Método HTTP.</li>
+                            <li>- URI.</li>
+                            <li>- Número de versión del HTTP.</li>
+                        </ul>
+                    </li>
+
+                    <li>Ejemplo: GET /default.aspx HTTP/1.1</li>
+
+                    <li><b>Metodos HTTP:</b> Un método es un comando HTTP que comienza la primer línea de una petición de un cliente. Informa al servidor del propósito de la petición del cliente.</li>
+                    <li>
+                        <h4>Existen 7 métodos definidos para el HTTP:</h4>
+                        <ul>
+                            <li>	GET - La info se envia por el URL</li>
+                            <li>	HEAD - Tiene un funcionamiento similar al GET, excepto que el servidor no envía nada en la porción de datos de la respuesta.</li>
+                            <li>	POST - Los datos enviados se encuentran en el contenido del mensaje de la petición del cliente.</li>
+                            <li>	DELETE - Realiza la petición para que el archivo sea borrado del servidor.</li>
+                            <li>	PUT	- Realiza la petición para que el documento incluido en el cuerpo de la petición se cargue al servidor y esté disponible con la URI especificada.</li>
+                            <li>	TRACE - Utilizado para debuguear la cadena petición/respuesta.</li>
+                            <li>	OPTIONS - Realiza la petición por información sobre soporte del HTTP en el servidor web.</li>
+                        </ul>
+                    </li>
+
+                    <li><b>URI:</b> Después del método de petición viene un URI especificando el archivo que se quiere obtener, cargar, etc.</li>
+
+                    <li><b>Respuesta HTTP:</b> La respuesta se divide en tres partes:</li>
+                    <li>
+                        <ul>
+                            <li>- Línea de respuesta del servidor.</li>
+                            <li>- Información de cabeceras.</li>
+                            <li>- Contenido del mensaje.</li>
+                        </ul>
+                    </li>
+
+                    <li>Después de que se envía la respuesta, el servidor:</li>
+                    <li><b>HTTP/1.0:</b> termina la conexión, al menos que:</li>
+                    <li>Connection: Keep-Alive</li>
+                    <li><b>HTTP/1.1:</b> mantiene la conexión, al menos que:</li>
+                    <li>Connection: close</li>
+
+                    <li><b>Codigos de Estado:</b> El código de estado es un número de 3 dígitos el resultado del servidora la petición del cliente.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>

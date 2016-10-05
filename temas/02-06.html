@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1>TCP vs UDP</h1>
+                <ul>
+                    <li>
+                        <h4>UDP: Es un protocolo no orientado a conexión. El flujo es unidireccional.</h4>
+                        <ul> 
+                            <li>- Proporciona un nivel de transporte no fiable de datagramas.</li> 
+                            <li>- Se emplea en tareas de control y en la transmisión de audio y vídeo a través de una red.</li> 
+                            <li>- No introduce retardos para establecer una conexión.</li>
+                            <li>- No mantiene estado de conexión alguno.</li>
+                            <li>- No realiza seguimiento de estos parámetros.</li> 
+                            <li>- En servidor puede soportar más clientes activos cuando la aplicación corre sobre UDP.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>TCP: Orientado a conexión.</h4>
+                        <ul>  
+                            <li>- Proporciona un transporte fiable de flujo de bits entre aplicaciones.</li> 
+                            <li>- Está pensado para poder enviar grandes cantidades de información de forma fiable.</li>
+                            <li>- Se tiene que añadir bastante información a los paquetes a enviar.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>TCP vs UDP</h4>
+                        <ul>
+                            <li>El segmento TCP tiene una sobrecarga de 20 bytes en cada segmento, mientras que UDP solo añade 8 bytes.</li> 
+                            <li>Cuando es más importante la velocidad que la fiabilidad, se utiliza UDP.</li> 
+                            <li>En cambio, TCP asegura la recepción en destino de la información para transmitir.</li>
+                        </ul>
+                    </li>
+                    <li>Ya que tanto TCP como UDP circulan por la misma red, en muchos casos ocurre que el aumento del tráfico UDP daña el correcto funcionamiento de las aplicaciones TCP.</li> 
+
+                    <li>Por defecto, TCP pasa a un segundo lugar para dejar a los datos en tiempo real usar la mayor parte del ancho de banda. El problema es que ambos son importantes para la mayor parte de las aplicaciones, por lo que encontrar el equilibrio entre ambos es crucial.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>

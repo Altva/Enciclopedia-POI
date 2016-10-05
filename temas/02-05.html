@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1>Protocolo UDP</h1>
+                <ul>
+                    <li><b>UPD - User Datagram Protocol:</b> Permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión, ya que el propio datagrama incorpora suficiente información de direccionamiento en su cabecera.</li>
+
+                    <li><b>Caracteristicas:</b> UDP no otorga garantías para la entrega de sus mensajes y el origen UDP no retiene estados de los mensajes UDP que han sido enviados a la red.</li> 
+
+                    <li>
+                        <h4>Puertos:</h4>
+                        <ul>
+                            <li>El campo de puerto tiene una longitud de 16 bits, por lo que el rango de valores válidos va de 0 a 65,535.</li> 
+                            <li>El puerto 0 está reservado, pero es un valor permitido como puerto origen si el proceso emisor no espera recibir mensajes como respuesta.</li>
+                            <li>Los puertos 1 a 1,023 se llaman puertos "bien conocidos" y en sistemas operativos tipo Unix enlazar con uno de estos puertos requiere acceso como superusuario.</li>
+                            <li>Los puertos 1024 a 49,151 son puertos registrados.</li>
+                            <li>Los puertos 49,152 a 65,535 son puertos efímeros y son utilizados como puertos temporales, sobre todo por los clientes al comunicarse con los servidores.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>Uso En Aplicaciones:</h4> 
+                        <ul>
+                            <li>La mayoría de las aplicaciones claves de Internet utilizan el protocolo UDP, incluyendo:</li> 
+                            <li>El Sistema de Nombres de Dominio (DNS), donde las consultas deben ser rápidas y solo contaran de una sola solicitud, luego de un paquete único de respuesta.</li>
+                            <li>El Protocolo de Configuración dinámica de host (DHCP).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1>IPv6</h1>
+                <ul>
+                    <li>
+                        <h4>Problemas con IPv4:</h4>
+                        <ul>
+                            <li>- Espacio IPv4 limitado y mal distribuido (EEUU vs. Resto del mundo)</li>
+                            <li>- Encabezado de tamaño variable y no óptimo</li>
+                            <li>- No muy flexible a extensiones y opciones</li>
+                            <li>- Difícil implementar QoS</li>
+                            <li>- Autentificación y privacidad no incluidos</li>
+                        </ul>
+                    </li>
+
+                    <li>En 1992, la IETF comenzó a buscar el protocolo de nueva generación para el Internet.</li>
+                    <li>Dos años después se adoptó el Simple Internet Protocol Plus (SIPP).</li>
+                    <li>En 1995 se llamó Internet Protocol versión 6 (IPv6).</li>
+
+                    <li>Una dirección IPv6 se muestra de la forma:</li>
+                    <li>xxxx.xxxx.xxxx.xxxx.xxxx.xxxx.xxxx.xxxx</li>
+
+                    <li>
+                        <h4>Caracteristicas del IPv6:</h4>
+                        <ul>
+                            <li>- Nuevo formato de cabecera, mayor espacio de dirección.</li>
+                            <li>- Direccionamiento eficiente y jerárquico e infraestructura de ruteo.</li>
+                            <li>- Seguridad incluida.</li>
+                            <li>- Soporte para multicasting.</li>
+                            <li>- Soporte para auto configuración.</li>
+                            <li>- Mejor soporte para calidad del servicio (QoS).</li>
+                            <li>- Compatibilidad con el IPv4.</li>
+                        </ul>
+                    </li>
+
+                    <li>La cabecera del IPv6 se simplifica eliminando campos innecesarios. Permite procesamiento mas eficiente.</li>
+                    <li>En el IPv4, la cabecera tiene un tamaño variable de 20 bytes, mientras que en el IPv6, tiene un tamaño fijo de 40 bytes.</li>
+
+                    <li>IPv6 usa el modelo de direccionamiento de 128 bits, usando mas espacio que las direcciones IPv4 de 32 bits.</li>
+
+                    <li>
+                        <h4>Una dirección IPv6 tiene 3 formas de representación:</h4>
+                        <ul>
+                            <li>
+                                <h4>- Forma colon-hexadecimal:</h4>
+                                <ul> 
+                                    <li>Por ejemplo una dirección IPv4 en decimal se vería: 26312.423.256.61020.65535.55234.6123.56432</li>
+                                    <li>La representación IPv6 en formato colon-hexadecimal: 66CB:01A7:0100:EE5C:FFFF:D7C2:12EB:DC70</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>- Forma comprimida:</h4>
+                                <ul>
+                                    <li>Se pueden omitir los ceros (0’s). Con la dirección: 80FF:10FE:0E00:00FF:0000:0000:0000:0001</li>
+                                    <li>Comprimida sería: 80FF:10FF:E00:FF:0:0:0:1</li>
+                                    <li>Para reducir aún mas el tamaño, se pueden comprimir los grupos de 0’s de 16 bits en :: 80FF:10FE:E00:FF::1</li>
+                                    <li><b>NOTA:</b> El símbolo :: solo aparece 1 vez en una dirección.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>- Forma mixta:</h4>
+                                <ul> 
+                                    <li>Consiste en una combinación de una dirección IPv6 y una IPv4 en el formato: x:x:x:x:x:x:d:d:d:d</li>
+                                    <li>Donde las x representan lo valores hexadecimal de los elementos mas a la izquierda de la dirección IPv6, y las d representan el valor decimal de la dirección IPv4.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <li>
+                        <h4>Tipos de direcciones IPv6</h4>
+                        <ul>
+                            <li><b>- Unicast:</b> Existen diversas formas dependiendo del alcance:</li>
+                            <li><b>- Enlace local:</b> No pasan a través de un router. Estas direcciones se usan cuando el equipo se enciende y aún no ha adquirido sus direcciones.</li>
+                            <li><b>- Sitio local:</b> Se utilizan en el interior de una organización. Los prefijos son FECx, FEDx, FEEx, FEFx. //IPv4 privadas</li>
+                            <li><b>- Global:</b> Son direcciones públicas utilizadas por el Internet con IPv6. //IPv4 publicas</li>
+                            <li><b>- Multicast:</b> Una dirección multicast es un identificador para un grupo de direcciones y es usada para broadcasting.</li>
+                            <li><b>- Anycast:</b> Una dirección anycast se asigna a mas de una interfaz. Los paquetes enviados a una dirección anycast se rutean a las interfaces mas cercanas.</li>
+                        </ul>
+                    </li>
+                    <li>El anycast es una característica del IPv6 y no está disponible en el IPv4.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>

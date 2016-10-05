@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1>Protocolo TCP</h1>
+                <ul>
+                    <li>
+                    Multiplexion: TCP posibilita la realización de una tarea importante: multiplexar/demultiplexar.
+                    Esto significa que puede transmitir datos desde diversas aplicaciones en la misma línea o, en otras palabras, ordenar la información que llega en paralelo.
+                    </li>
+
+                    <li>El protocolo TCP tiene un sistema de acuse de recibo que permite al cliente y al servidor garantizar la recepción mutua de datos.</li>
+
+                    <li>Además, usando un temporizador que comienza con la recepción del segmento en el nivel de la máquina originadora, el segmento se reenvía cuando ha transcurrido el tiempo permitido, ya que en este caso la máquina originadora considera que el segmento está perdido.</li>
+
+                    <li>Si el segmento no está perdido y llega al destino, la máquina receptora lo sabrá, gracias al número de secuencia, que es un duplicado, y sólo retendrá el último segmento que llegó a destino.</li>
+                    <li>
+                        <h4>¿Como estableces la conexion?</h4>
+                        <ul>
+                            <li>- Los puertos TCP deben estar abiertos.</li>
+                            <li>- La aplicación en el servidor es pasiva. La aplicación escucha y espera una conexión.</li>
+                            <li>- La aplicación del cliente realiza un pedido de conexión al servidor en el lugar donde la aplicación es abierta pasiva.</li> 
+                            <li>- La aplicación del cliente se considera abierta activa.</li>
+                        </ul>
+                    </li>
+                    <li>Existe una técnica de piratería llamada falsificación de IP, que permite corromper este enlace de aprobación con fines maliciosos.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>

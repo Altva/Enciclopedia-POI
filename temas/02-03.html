@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/conentload.js"></script>
+
+        <title>Enciclopedia</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Programación Orientada a Internet </h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="menu-item top">
+                    <h4><a href="#">Temario</a></h4>
+                    
+                    <p>Aqui podras acceder a todos los temas de la classe de programación orientada a internet</p>
+                    
+                </div>
+                <div class="menu-item parcial-1">
+                    <h4><a href="#">Primer Parcial</a></h4>
+                    <ul>
+                        <li><a href="01-01.html">Historia del Internet</a> </li>
+                        <li><a href="01-02.html">Modelo OSI</a> </li>
+                        <li><a href="01-03.html">Internet y DHCP</a> </li>
+                        <li><a href="01-04.html">DNS, Sockets y Puertos</a> </li>
+                        <li><a href="01-05.html">HTTP, FTP y SMTP</a> </li>
+                        <li><a href="01-06.html">Telnet</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-item parcial-2">
+                    <h4><a href="#">Segundo parcial</a></h4>
+                    <ul>
+                        <li><a href="02-01.html">Direccion IP</a> </li>
+                        <li><a href="02-02.html">SMTP</a> </li>
+                        <li><a href="02-03.html">POP3</a> </li>
+                        <li><a href="02-04.html">TCP</a> </li>
+                        <li><a href="02-05.html">UDP</a> </li>
+                        <li><a href="02-06.html">TCP vs UDP</a> </li>
+                        <li><a href="02-07.html">HTTP</a> </li>
+                        <li><a href="02-08.html">Multicast</a> </li>
+                        <li><a href="02-09.html">IPv6</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="content">
+            <div class="content-data">
+                <h1> Post Office Protocol </h1>
+                <ul>
+                    <li>
+                        Protocolo de oficina postal. Se utiliza en clientes locales de correo electronico para obtener los mensajes de correo electronico almacenados en un servidor remoto.
+                        Trabaja en el nivel de aplicacion.
+                    </li>
+                    <li>El POP3 se basa en la comunicación del protocolo TCP en el puerto 110.</li> 
+                        <li>
+                            <h4>Funcionamiento:</h4><ul>
+                            <li>Cuando el POP3 necesita entrar al buzón:</li> 
+                            <li>-Se conecta mediante el servidor de POP3</li>
+                            <li>-Recupera la información que le interesa</li>
+                            <li>-Cierra la conexión</li>
+                            <li>Para entrar nuevamente al buzón, se establece una conexión nueva.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Los comandos de POP3 constituyen cadenas de caracteres ASCII imprimibles acabados con (CRLF). 
+                        Cada comando incluye un código alfanumérico de cuatro caracteres que identifica el comando, seguido por uno cero o más parámetros.
+                        <br>
+                        Las respuestas de POP3 son con cadenas de caracteres ASCII, y se representan con un indicador de estado como positivo (+OK) o negativo (-ERR) 
+                    </li>
+                    <li>
+                        <h4>Modelo POP3:</h4>
+                        <ul>
+                            <li>Cliente POP3: para acceder al buzón de correo se debe comunicar primero con un servidor de POP3 con un protocolo de la misma clase (o sea POP3).</li>
+                            <li>Servidor POP3: recibe todas las peticiones de los clientes de POP3 y les permite el acceso a todos los clientes para que puedan entrar a sus bandejas de correo.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Detalles del POP3:</b>
+                        POP3 está diseñado para recibir correo, no para enviarlo; le permite a los usuarios con conexiones intermitentes o muy lentas (tales como las conexiones por módem), descargar su correo electrónico mientras tienen conexión y revisarlo posteriormente incluso estando desconectados.
+                    </li>
+                    <li>
+                        <h4>Estados para abrir sesion:</h4>
+                        <ul>
+                            <li>-Al abrirse la conexión, la sesión entra en estado autorizado, en que el cliente debe identificarse ante el servicio de POP3.</li>
+                            <li>-Cuando es autorizado, la sesión pasa al estado de transacción. Es donde el cliente pide acciones al servidor POP3 con los comandos necesarios.</li>
+                            <li>-Cuando el cliente utiliza el comando QUIT, la sesión entra al modo actualizado. El servidor libera los recursos, se despide y cierra la conexión de TCP.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Comandos:</h4>
+                        <ul>
+                            <li>USER (nombre) Identificación de usuario (Solo se realiza una vez).</li>
+                            <li>PASS (password) Envía la clave del servidor.</li>
+                            <li>STAT Da el número de mensajes no borrados en el buzón y su longitud total.</li>
+                            <li>LIST Muestra todos los mensajes no borrados con su longitud.</li>
+                            <li>RETR (número) Solicita el envío del mensaje especificando el número (no se borra del buzón).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                Diseñadores: Luis Adrián Almaguer de la Garza y Vanessa Carolina Soto Macías.
+            </div>
+        </div>
+    </body>
+</html>
